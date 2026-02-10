@@ -10,5 +10,10 @@ correct = 0
 
 for state, capital in states_and_capitals.items():
     answer = input(f"What is the capital of {state}? ")
-    print(state, capital)
-    print("Your answer:", answer)
+    # print(state, capital)
+    # print("Your answer:", answer)
+    if answer == capital:
+        print("Correct!")
+        correct += 1
+    else:
+        print("Wrong")
