@@ -10,4 +10,5 @@ with open("emp_data.txt", 'r') as file:
             "employee_name": line.split(", ")[1].strip()
         }
 
-print(employee_data)
+for key, value in employee_data.items():
+    print(f"Employee {key}: \n\tID: {value['employee_id']}\n\tName: {value['employee_name']}")
