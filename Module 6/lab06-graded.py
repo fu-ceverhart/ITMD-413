@@ -2,6 +2,10 @@ employee_data = {}
 
 with open("emp_data.txt", 'r') as file:
     for i, line in enumerate(file, start=1):
-        print(i)
-        print("Employee ID:", line.split(", ")[0])
-        print("Name:", line.split(", ")[1])
+        # print(i)
+        # print("Employee ID:", line.split(", ")[0])
+        # print("Name:", line.split(", ")[1])
+        employee_data[i] = {
+            "Employee ID": int(line.split(", ")[0]),
+            "Employee Name": line.split(", ")[1].strip()
+        }
