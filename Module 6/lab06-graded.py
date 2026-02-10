@@ -6,6 +6,8 @@ with open("emp_data.txt", 'r') as file:
         # print("Employee ID:", line.split(", ")[0])
         # print("Name:", line.split(", ")[1])
         employee_data[i] = {
-            "Employee ID": int(line.split(", ")[0]),
-            "Employee Name": line.split(", ")[1].strip()
+            "employee_id": int(line.split(", ")[0]),
+            "employee_name": line.split(", ")[1].strip()
         }
+
+print(employee_data)
