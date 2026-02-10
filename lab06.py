@@ -8,3 +8,5 @@ states_and_capitals = {
 
 correct = 0
 
+for state, capital in states_and_capitals.items():
+    print(state, capital)
