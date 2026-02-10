@@ -13,7 +13,9 @@ for state, capital in states_and_capitals.items():
     # print(state, capital)
     # print("Your answer:", answer)
     if answer == capital:
-        print("Correct!")
+        print("Correct")
         correct += 1
     else:
         print("Wrong")
+
+print(f"You got {correct} out of {len(states_and_capitals)} correct.")
