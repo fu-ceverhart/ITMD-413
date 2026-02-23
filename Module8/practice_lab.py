@@ -25,7 +25,11 @@ class GUI:
 
     def calculate_gas_mileage(self):
         '''Calculate and display the gas mileage'''
-        pass
-
-
+        if float(self.gallons_entry.get()) > 0:
+            miles = float(self.miles_entry.get())
+            gallons = float(self.gallons_entry.get())
+            mileage = miles / gallons
+            self.result_label.config(text=f"{mileage:.2f} MPG")
+        else:
+            self.result_label.config(text="Error: Cannot divide by zero.")
 app = GUI()
