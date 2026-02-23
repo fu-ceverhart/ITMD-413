@@ -15,6 +15,17 @@ class GUI:
         self.miles_entry = tk.Entry(self.main_window)
         self.miles_label.pack()
         self.miles_entry.pack()
+        self.calculate_button = tk.Button(self.main_window, 
+            text="Calculate", 
+            command=self.calculate_gas_mileage)
+        self.result_label = tk.Label(self.main_window, text="")
+        self.calculate_button.pack()
+        self.result_label.pack()
         self.main_window.mainloop()
+
+    def calculate_gas_mileage(self):
+        '''Calculate and display the gas mileage'''
+        pass
+
 
 app = GUI()
